@@ -1,0 +1,9 @@
+version: "3"
+services:
+  osal:
+    build: .
+    image: dishwasha/osal:4.2.1a
+    environment:
+      OSAL_SRC: /osal/src
+    sysctls:
+      fs.mqueue.msg_max: 64
